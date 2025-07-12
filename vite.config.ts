@@ -21,6 +21,11 @@ export default defineConfig({
             },
         }),
     ],
+    build: {
+        manifest: true,
+        outDir: 'public/build',
+        emptyOutDir: true,
+    },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './resources/js'),
